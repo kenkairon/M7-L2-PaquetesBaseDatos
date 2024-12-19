@@ -137,7 +137,7 @@ Educativo y de Aprendizaje Personal
         productos = Producto.objects.filter(stock__gt=0)
         return render(request, 'lista_productos.html', {'productos': productos})
 
-17. creamos en hotel/templates/lista_usuarios.html 
+17. creamos en mi_app/templates/lista_usuarios.html 
     ```bash 
     <!DOCTYPE html>
         <html>
@@ -156,7 +156,7 @@ Educativo y de Aprendizaje Personal
         </body>
 
         </html>
-18. creamos en hotel/templates/lista_productos.html 
+18. creamos en mi_app/templates/lista_productos.html 
     ```bash 
     <!DOCTYPE html>
     <html>
