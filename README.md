@@ -96,7 +96,7 @@ Educativo y de Aprendizaje Personal
 
 14. en mi_app/models.py
     ```bash
-   from django.db import models
+    from django.db import models
 
     class Usuario(models.Model):
         nombre = models.CharField(max_length=100)
@@ -126,7 +126,7 @@ Educativo y de Aprendizaje Personal
 
 16. mi_app/views.py 
     ```bash 
-   from django.shortcuts import render
+    from django.shortcuts import render
     from .models import Usuario, Producto
 
     def lista_usuarios(request):
@@ -139,23 +139,23 @@ Educativo y de Aprendizaje Personal
 
 17. creamos en hotel/templates/lista_usuarios.html 
     ```bash 
-   <!DOCTYPE html>
-    <html>
+    <!DOCTYPE html>
+        <html>
 
-    <head>
-        <title>Lista de Usuarios</title>
-    </head>
+        <head>
+            <title>Lista de Usuarios</title>
+        </head>
 
-    <body>
-        <h1>Users</h1>
-        <ul>
-            {% for usuario in usuarios %}
-            <li>{{usuario.nombre }} {{ usuario.apellido }} - {{ usuario.correo }}</li>
-            {% endfor %}
-        </ul>
-    </body>
+        <body>
+            <h1>Users</h1>
+            <ul>
+                {% for usuario in usuarios %}
+                <li>{{usuario.nombre }} {{ usuario.apellido }} - {{ usuario.correo }}</li>
+                {% endfor %}
+            </ul>
+        </body>
 
-    </html>
+        </html>
 18. creamos en hotel/templates/lista_productos.html 
     ```bash 
     <!DOCTYPE html>
