@@ -8,8 +8,8 @@ Educativo y de Aprendizaje Personal
 - [Configuración Base de datos](#configuración-Base-de-datos)
 - [Creación del Modelo](#creación-del-modelo)
 - [Creación de Vistas](#creación-de-vistas)
-- [Insertamos datos en un dataShell ](#Insertamos-datos-en-un-dataShell)
 - [Configuracion de la vista de la base de datos](#Configuracion-de-la-vista-de-la-base-de-datos)
+- [Creamos el superusuario](#creamos-el-superusuario)
 ---
 # Tecnologías
 - Django: Framework web en Python.
@@ -195,7 +195,7 @@ Educativo y de Aprendizaje Personal
 # Configuracion de la vista de la base de datos
 19. En mi_app/admin.py 
     ```bash	
-   from django.contrib import admin
+    from django.contrib import admin
     from .models import Usuario, Producto
     # Register your models here.
 
